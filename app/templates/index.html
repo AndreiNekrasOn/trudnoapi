@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+   <form action="/api" method="post" novalidate>
+       {{ form.hidden_tag() }}
+       <p>
+           {{ form.json_data.label }}<br>
+           {{ form.json_data(rows='50',cols='100') }}
+       </p>
+
+
+
+       <p>{{ form.submit() }}</p>
+   </form>
+</body>
+</html>
+
+<!--
+        <p>
+            {{ form.namelemm.label }}<br>
+            {{ form.namelemm(size=32) }}
+        </p>
+
+       <p>
+            {{ form.city.label }}<br>
+            {{ form.city(size=32) }}
+        </p>
+
+       <p>
+            {{ form.companyid.label }}<br>
+            {{ form.companyid(size=32) }}
+       </p>
+
+       <p>
+            {{ form.publication_date.label }}<br>
+            {{ form.publication_date(size=32) }}
+       </p>
+
+       <p>
+            {{ form.employment.label }}<br>
+            {{ form.employment(size=32) }}
+       </p>
+
+
+       <p>
+            {{ form.schedule.label }}<br>
+            {{ form.schedule(size=32) }}
+       </p>
+
+
+       <p>
+            {{ form.experience.label }}<br>
+            {{ form.experience(size=32) }}
+       </p>
+
+       <p>
+            {{ form.key_skills.label }}<br>
+            {{ form.key_skills(size=32) }}
+       </p>
+
+       <p>
+            {{ form.specializations.label }}<br>
+            {{ form.specializations(size=32) }}
+       </p>
+
+       <p>
+            {{ form.descriptionlemm.label }}<br>
+            {{ form.descriptionlemm(size=32) }}
+       </p>
+
+-->
